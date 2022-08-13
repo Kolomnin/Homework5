@@ -21,8 +21,9 @@ public class Main {
         index[0] = 1;
         index[1] = 2;
         index[2] = 3;
-        for (int i = 0;i<index.length; i++) {
-        if(i==index.length-1)
+
+        for (int i = 0;i<index.length-1; i++) {
+        if(i == index.length-1)
             System.out.printf("%s ",index[i]);
         else
             System.out.printf("%s, ",index[i]);
@@ -123,9 +124,14 @@ public class Main {
     // Задание №5
     public static void task5() {
         System.out.println("\n" + "Задание 5");
-        int[][] array = {{1,2,1,},
-                         {4,1,6,},
-                         {1,8,1}};
+        int size = 3;
+        int m = 1;
+        int[][] array = new int[size][size];
+        for (int i = 0; i < size; i++) {
+                array[i][i] = m;
+                array[i][size-i-1] = m;
+        }
+
         for (int[] row : array) {
             for (int column : row) {
                 System.out.print(column + " ");
