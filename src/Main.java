@@ -22,11 +22,13 @@ public class Main {
         index[1] = 2;
         index[2] = 3;
 
-        for (int i = 0;i<index.length-1; i++) {
-        if(i == index.length-1)
-            System.out.printf("%s ",index[i]);
-        else
-            System.out.printf("%s, ",index[i]);
+        for (int i = 0; i<index.length; i++) {
+
+            if (i != index.length - 1) {
+                System.out.print(index[i] + ", ");
+            } else {
+                System.out.print(index[i] + " ");
+            }
         }
         System.out.println("\n");
 
@@ -49,8 +51,9 @@ public class Main {
         System.out.println("\n");
     }
 
-   // Задаине №3
+
     public static void task3() {
+        System.out.println("\n" + "Задание 3");
 
             int[] index1 = new int[3];
             index1[0] = 1;
@@ -74,22 +77,21 @@ public class Main {
                 else
                     System.out.printf(", %s", arr11[(int) j]);
             }
-        System.out.println("\n" + "Задание 3");
+        // Задание №3
 
+        System.out.println("\n");
             char[] arr22 = {113, 166, 167, 687, 993, 654};
-            for (char c = (char) (arr22.length - 1); c < arr22.length  ; c--) {
+            for (int c = arr22.length - 1; c >= 0  ; c--) {
                 if (c == arr22.length -1 )
                     System.out.printf(" %s", arr22[c]);
                 else
                     System.out.printf(", %s", arr22[c]);
-
         }
-
-        System.out.println("\n" + "Задание 4");
     }
 
     // Задание №4
     public static void task4() {
+        System.out.println("\n" + "Задание 4");
         int[] index3 = new int[5];
         index3[0] = 1;
         index3[1] = 2;
